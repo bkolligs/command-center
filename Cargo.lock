@@ -3,15 +3,6 @@
 version = 3
 
 [[package]]
-name = "ambi-command-center"
-version = "0.1.0"
-dependencies = [
- "wasm-bindgen",
- "web-sys",
- "yew",
-]
-
-[[package]]
 name = "autocfg"
 version = "0.1.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -25,13 +16,6 @@ name = "autocfg"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d468802bab17cbc0cc575e9b053f41e72aa36bfa6b7f55e3529ffa43161b97fa"
-
-[[package]]
-name = "backend"
-version = "0.1.0"
-dependencies = [
- "websocket",
-]
 
 [[package]]
 name = "base64"
@@ -111,6 +95,22 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ddfc5b9aa5d4507acaf872de71051dfd0e309860e88966e1051e462a077aac4f"
 dependencies = [
  "bitflags",
+]
+
+[[package]]
+name = "command-center-backend"
+version = "0.1.0"
+dependencies = [
+ "websocket",
+]
+
+[[package]]
+name = "command-center-frontend"
+version = "0.1.0"
+dependencies = [
+ "wasm-bindgen",
+ "web-sys",
+ "yew",
 ]
 
 [[package]]

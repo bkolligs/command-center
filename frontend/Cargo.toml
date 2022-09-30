@@ -1,5 +1,5 @@
 [package]
-name = "ambi-command-center"
+name = "command-center-frontend"
 authors = ["Ben Kolligs"]
 version = "0.1.0"
 edition = "2021"
