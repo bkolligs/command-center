@@ -150,6 +150,7 @@ name = "command-center-backend"
 version = "0.1.0"
 dependencies = [
  "clap",
+ "log 0.4.17",
  "websocket",
  "zmq",
 ]

@@ -10,3 +10,4 @@ default-run = "command-center-backend"
 websocket = "0.24.0"
 zmq = "0.9"
 clap = {version = "4.0", features = ["derive"]}
+log = "0.4.17"

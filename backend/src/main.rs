@@ -1,4 +1,6 @@
+mod logger;
 use clap::Parser;
+use logger::Logger;
 use std::path::PathBuf;
 
 #[derive(Parser)]
@@ -36,9 +38,9 @@ fn main() {
         println!("WOw! {:?}", config);
     }
 
-    println!(
-        "Using port {0} to listen to, and port {1} to publish to",
-        args.zmq_sub_port, args.web_port
-    );
-    log::warn!();
+    log::info!(
+        " Using port {0} to listen to, and port {1} to publish to",
+        args.zmq_sub_port,
+        args.web_port
+    )
 }
